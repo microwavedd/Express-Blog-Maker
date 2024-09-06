@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubmitPost</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <form action="/submit" method="post">
+        <input type="text" name="entry" placeholder="Write here...">
+        <input type="submit" value="Submit">
+    </form>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

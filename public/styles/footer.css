@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-color: #87CEEB; /* Sky blue background */
+  }
+  
+  .footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center;    /* Centers the text vertically */
+    background-color: #87CEEB; /* Initial light blue */
+    animation: colorChange 10s infinite alternate; /* Smooth background color transition */
+  }
+  
+  .name {
+    font-size: 20px;
+    color: white; /* Text color to ensure visibility against background */
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #87CEEB; /* Light blue */
+    }
+    50% {
+      background-color: #1e90ff; /* Dark blue */
+    }
+    100% {
+      background-color: #87CEEB; /* Back to light blue */
+    }
+  }
+  
