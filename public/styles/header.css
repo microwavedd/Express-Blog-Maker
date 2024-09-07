@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: left; /* Centers the text horizontally */
+    align-items: center;     /* Centers the text vertically */
+    background-color: #1e90ff; /* Initial light blue */
+    animation: colorChange2 10s infinite alternate;
+    
+    position: fixed;  /* Keeps the header fixed at the top */
+    top: 0;           /* Aligns the header to the top of the page */
+    left: 0;
+    z-index: 1000;    /* Ensures it stays above other elements */
+}
+.title {
+    font-size: 20px;
+    color: white; /* Text color to ensure visibility against background */
+    margin-left: 50px;
+  }
+
+  @keyframes colorChange2 {
+    0% {
+      background-color: #1e90ff; /* Light blue */
+    }
+    50% {
+      background-color: #87CEEB; /* Dark blue */
+    }
+    100% {
+      background-color: #1e90ff; /* Back to light blue */
+    }
+  }
+  
